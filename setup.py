@@ -6,9 +6,10 @@ from setuptools import setup, find_packages
 setup(
         name="arsdkxml",
         version="0.9.1",
-        packages=find_packages('arsdkxml'),
+        packages=find_packages(),
         package_data={
-                        'xml': ['arsdkxml/xml/*.xml']
+                        'xml': ['arsdkxml/xml/*.xml'],
+                        '': ['README.md']
                      },
         zip_safe=False,
         include_package_data=True,
@@ -18,5 +19,5 @@ setup(
         platforms="Linux",
         license="BSD",
         keywords="bebop python control xml",
-        url="https://github.com/amjltc295/arsdk-xml"
+        url="https://github.com/amjltc295/arsdkxml"
     )
